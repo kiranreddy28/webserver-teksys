@@ -1,0 +1,5 @@
+# Firewall configuration written by chef
+# Manual customization of this file is not recommended.
+# Port 80 and 443 for apache
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 443 -j ACCEPT
